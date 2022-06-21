@@ -1,0 +1,113 @@
+/* Gerais */
+body {
+    background: linear-gradient(180deg, #39BFBB 0%, #BCE4B2 100%) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.titulo1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+.submit1 {
+    color: rgba(0, 0, 0, 0.6);
+    background: rgba(255, 253, 253, 0.8);
+    border-radius: 35px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: none;
+    justify-self: center;
+    width: 200px;
+    height: 35px;
+    font-weight: 700;
+}
+.input1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    margin-bottom: 25px;
+}
+.input1::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 10px;
+} 
+.sm-text {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.59);
+}
+.sm-text-link {
+    color: rgba(255, 255, 255, 0.59);
+}
+
+.login-container {
+    max-width: 480px;
+}
+.form-hidden {
+    display: none !important;
+}
+
+/* Especificos */
+/* Login */
+.login-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.5);
+}
+.login-form-container {
+    display: grid;
+    grid-template-rows: 40px 60px 60px 25px 50px 50px 25px 50px 30px;
+    .login-ou {
+        font-size: 12px;
+        line-height: 13px;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+    .login-social {
+        justify-self: center;
+        height: 35px;
+        width: 240px;
+        border-radius: 35px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: none;
+        color: white;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .login-facebook {
+        background-color: #405A93;
+    }
+    .login-google {
+        background-color: #DD4B39
+    }
+}
+
+/*Senha*/
+.senha-container-1 {
+    display: grid;
+    grid-template-rows: 40px 60px 35px;
+    margin-bottom: 50px;
+}
+.senha-container-2 {
+    display: grid;
+    grid-template-rows: 40px 25px 60px 30px 50px 60px ;
+
+    .senha-label {
+        font-size: 12px;
+        line-height: 13px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+/* Cadastro */
+.cadastro-container {
+    display: grid;
+    grid-template-rows: 40px 50px 50px 50px 85px 35px;
+    margin-bottom: 50px;
+}
+

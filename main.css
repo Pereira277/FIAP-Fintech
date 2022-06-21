@@ -1,0 +1,333 @@
+/* Gerais */
+body {
+  background: linear-gradient(180deg, #39BFBB 0%, #BCE4B2 100%) no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.titulo1 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.submit1 {
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 253, 253, 0.8);
+  border-radius: 35px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  justify-self: center;
+  width: 200px;
+  height: 35px;
+  font-weight: 700;
+}
+
+.input1 {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border: none;
+  height: 35px;
+  margin-bottom: 25px;
+}
+
+.input1::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 10px;
+}
+
+.input1:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 10px;
+}
+
+.input1::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 10px;
+}
+
+.sm-text {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.59);
+}
+
+.sm-text-link {
+  color: rgba(255, 255, 255, 0.59);
+}
+
+.login-container {
+  max-width: 480px;
+}
+
+.form-hidden {
+  display: none !important;
+}
+
+/* Especificos */
+/* Login */
+.login-title {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.login-form-container {
+  display: grid;
+  grid-template-rows: 40px 60px 60px 25px 50px 50px 25px 50px 30px;
+}
+.login-form-container .login-ou {
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.login-form-container .login-social {
+  justify-self: center;
+  height: 35px;
+  width: 240px;
+  border-radius: 35px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+}
+.login-form-container .login-facebook {
+  background-color: #405A93;
+}
+.login-form-container .login-google {
+  background-color: #DD4B39;
+}
+
+/*Senha*/
+.senha-container-1 {
+  display: grid;
+  grid-template-rows: 40px 60px 35px;
+  margin-bottom: 50px;
+}
+
+.senha-container-2 {
+  display: grid;
+  grid-template-rows: 40px 25px 60px 30px 50px 60px;
+}
+.senha-container-2 .senha-label {
+  font-size: 12px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Cadastro */
+.cadastro-container {
+  display: grid;
+  grid-template-rows: 40px 50px 50px 50px 85px 35px;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  margin-top: 30px !important;
+  display: grid;
+  grid-template-rows: 25px 55px 1fr;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (min-width: 576px) {
+  .services-container {
+    grid-template-rows: 50px 90px 1fr;
+  }
+}
+
+.title2 {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (min-width: 576px) {
+  .title2 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.main-value {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media only screen and (min-width: 576px) {
+  .main-value {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+.services-container-2 {
+  height: 30px;
+  width: 95vw;
+  max-width: 800px;
+  list-style-type: none;
+  padding: 0 !important;
+  font-weight: 700;
+  font-size: 14px;
+}
+.services-container-2 .services-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-top: 0.5px solid rgba(116, 191, 196, 0.5);
+}
+.services-container-2 .services-list-item-name {
+  text-decoration: none;
+  line-height: 50px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.services-container-2 .services-list-item-value {
+  line-height: 50px;
+  color: #009A2B;
+}
+
+.services-container-2 li:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: none;
+}
+
+.services-container-2 li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.add-button {
+  position: fixed;
+  font-size: 30px;
+  line-height: 50px;
+  border: none;
+  bottom: 50px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #39BFBB;
+  box-shadow: 0px 10px 20px rgba(91, 129, 214, 0.8);
+}
+.add-button .fa-plus {
+  color: white;
+}
+
+.add-popup {
+  position: absolute;
+  left: calc(50vw - 150px);
+  top: calc(30vh - 60px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  height: 190px;
+  width: 300px;
+  padding: 20px 20px 15px 20px;
+  display: grid;
+  grid-template-columns: 70px 3fr;
+  grid-template-rows: 40px 40px 40px 40px;
+  z-index: 150;
+}
+.add-popup .add-form-type {
+  grid-column-start: 2;
+  height: 24px;
+  width: 190px;
+}
+.add-popup .add-form-name {
+  grid-column-start: 2;
+  height: 24px;
+  width: 190px;
+}
+.add-popup .add-form-value {
+  grid-column-start: 2;
+  height: 24px;
+  width: 190px;
+}
+.add-popup .popup-form-button {
+  height: 28px;
+  width: 110px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 10px;
+  border: none;
+}
+.add-popup .cancel-form-button {
+  box-shadow: 0px 10px 10px rgba(252, 40, 40, 0.5);
+  background: #e24646;
+}
+.add-popup .add-form-button {
+  grid-column-start: 2;
+  justify-self: end;
+  background: #39BFBB;
+  box-shadow: 0px 10px 10px rgba(57, 191, 187, 0.5);
+}
+
+.add-form-hidden {
+  display: none;
+}
+
+.dimmer-block {
+  display: block !important;
+}
+
+.dimmer {
+  display: none;
+  background: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+* {
+  font-family: "Comfortaa", cursive;
+}
+
+/* Navbar */
+.navbar-light {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-light .navbar-brand {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .navbar-toggler-icon {
+  border: none;
+}
+
+.navbar-light .navbar-item .nav-link {
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 576px) {
+  .brand {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin-left: 47px;
+  }
+}/*# sourceMappingURL=main.css.map */
