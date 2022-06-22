@@ -280,10 +280,6 @@ body {
   box-shadow: 0px 10px 10px rgba(57, 191, 187, 0.5);
 }
 
-.add-form-hidden {
-  display: none;
-}
-
 .dimmer-block {
   display: block !important;
 }
@@ -298,6 +294,48 @@ body {
   width: 100%;
   height: 100%;
   z-index: 100;
+}
+
+.edit-service-popup {
+  position: absolute;
+  left: calc(50vw - 150px);
+  top: calc(30vh - 60px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  height: 190px;
+  width: 300px;
+  padding: 20px 20px 15px 20px;
+  display: grid;
+  grid-template-columns: 70px 3fr;
+  grid-template-rows: 40px 40px 40px 40px;
+  z-index: 150;
+}
+
+.add-form-hidden {
+  display: none;
+}
+
+.edit-service-form-buttons {
+  height: 28px;
+  width: 110px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 10px;
+  border: none;
+}
+
+.edit-service-remove-btn {
+  box-shadow: 0px 10px 10px rgba(252, 40, 40, 0.5);
+  background: #e24646;
+}
+
+.edit-service-continue-btn {
+  grid-column-start: 2;
+  justify-self: end;
+  background: #39BFBB;
+  box-shadow: 0px 10px 10px rgba(57, 191, 187, 0.5);
 }
 
 * {

@@ -24,14 +24,14 @@
         <h1 class="text-center login-title">FINTECH</h1>
 
         <div class="mt-5">
-            <form class="login-form-container" action="servicos.html">
+            <form class="login-form-container" action="" target="_blank">
                 <span class="titulo1">Login</span>
-                <input type="text" name="senha" class="login-input input1" placeholder="Email">
-                <input type="text" name="email" class="login-input input1" placeholder="Senha">
+                <input type="email" name="email" class="login-input input1" placeholder="Email">
+                <input type="password" name="senha" class="login-input input1" placeholder="Senha">
                 <span class="sm-text">Esqueceu a senha? <a href="recsenha.html" class="sm-text-link">Clique aqui</a></span>
                 <span class="sm-text">Ainda não é cadastrado? <a href="cadastro.html" class="sm-text-link">Clique aqui</a></span>
                 
-                <button type="submit" class="submit1">Entrar</button>
+                <button type="submit" onclick="window.location.href = 'servicos.html';" class="submit1" id="submit">Entrar</button>
                 <span class="login-ou">ou</span>
                 <button class="login-social login-facebook">Continuar com Facebook</button>
                 <button class="login-social login-google">Continuar com Google</button>

@@ -44,33 +44,40 @@
     <!-- Main content -->
     <div class="services-container">
       <h3 class="title2">Serviços contratados:</h3>
-      <h1 class="main-value">R$550,30</h1>
+      <h1 class="main-value">R$0.00</h1>
       <ul class="services-container-2">
       </ul>
     </div>
 
+    <!-- Dimmer -->
     <div class="dimmer">
       <span class="exit">&times;</span>
     </div>
 
+    <!-- Add service popup -->
     <button class="add-button"><span class="fa fa-plus"></span></button>
 
-    <form action="" class="add-popup add-form-hidden">
+    <form action="" class="add-popup add-form-hidden" target="_blank" id="add-popup-form" method="POST">
       <label for="type" class="add-form-type-label">Tipo:</label>
-      <select name="type" class="add-form-type">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
+      <select name="type" class="add-form-type" form="add-popup-form">
+        <option value="empty" disabled selected hidden>Selecione o tipo</option>
+        <option value="Alimentacao">Alimentação</option>
+        <option value="Entretenimento">Entretenimento</option>
+        <option value="Trabalho">Trabalho</option>
+        <option value="Aluguel">Aluguel</option>
+        <option value="Outros">Outros</option>
       </select>
       <label for="name" class="add-form-name-label">Nome:</label>
       <input type="text" name="name" class="add-form-name" placeholder="nome">
       <label for="value" class="add-form-value-label">Valor:</label>
-      <input type="text" name="value" class="add-form-value" placeholder="valor">
+      <input type="number"  min="0" step="0.01" name="value" class="add-form-value" placeholder="valor">
       <button type="button" class="cancel-form-button popup-form-button">Cancelar</button>
       <button type="submit" class="add-form-button popup-form-button">Adicionar</button>
     </form>
 
+    <!-- Edit service popup -->
+    <div class="edit-service-popup add-form-hidden">
+    </div>
 
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
